@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kamus Sasak API | Dokumentasi oleh Salman Al Farisi</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        code { font-family: 'JetBrains Mono', monospace; }
+    </style>
+</head>
+<body class="bg-[#0B0F19] text-slate-200 antialiased selection:bg-indigo-500 selection:text-white">
+
+    <header class="border-b border-slate-800/80 backdrop-blur-md bg-[#0B0F19]/70 sticky top-0 z-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="bg-indigo-600 text-white p-2 rounded-xl shadow-lg shadow-indigo-600/30">
+                    <i class="fa-solid fa-language text-xl"></i>
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-bold text-base tracking-tight text-white leading-tight">SasakAPI</span>
+                    <span class="text-[10px] text-slate-400 font-medium tracking-wide">by Salman Al Farisi</span>
+                </div>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="#docs" class="text-sm font-medium text-slate-400 hover:text-white transition">Dokumentasi</a>
+                <a href="https://github.com" target="_blank" class="text-slate-400 hover:text-white transition text-lg">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="max-w-4xl mx-auto px-4 sm:px-6 pt-16 pb-12 text-center relative overflow-hidden">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[350px] h-[350px] bg-indigo-600/10 blur-[100px] rounded-full -z-10"></div>
+        
+        <div class="inline-flex items-center gap-2 mb-6 bg-slate-900/80 border border-slate-800 p-1.5 pr-4 rounded-full shadow-xl">
+            <span class="px-2.5 py-0.5 text-[11px] font-semibold text-indigo-400 bg-indigo-500/10 rounded-full border border-indigo-500/20">
+                👨‍💻 Creator
+            </span>
+            <span class="text-xs font-medium text-slate-300">
+                Created by <strong class="text-white font-semibold">Salman Al Farisi</strong>
+            </span>
+        </div>
+
+        <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-white mb-4 leading-tight">
+            API Kamus Sasak - Indonesia <br>
+            <span class="bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">Untuk Para Developer</span>
+        </h1>
+        <p class="text-sm sm:text-base text-slate-400 max-w-xl mx-auto mb-6">
+            Integrasikan kosakata bahasa Sasak ke dalam aplikasi mobile buatanmu dengan cepat, aman, dan efisien.
+        </p>
+        
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
+            <a href="#docs" class="w-full sm:w-auto px-5 py-2.5 bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-medium rounded-xl shadow-lg shadow-indigo-600/20 transition flex items-center justify-center gap-2">
+                Mulai Integrasi <i class="fa-solid fa-arrow-right text-xs"></i>
+            </a>
+            <button onclick="copyBaseUrl()" class="w-full sm:w-auto px-5 py-2.5 bg-slate-800/80 hover:bg-slate-800 text-slate-300 text-sm font-medium rounded-xl border border-slate-700/60 transition flex items-center justify-center gap-2 group">
+                <span id="base-url-text">Memuat Base URL...</span>
+                <i class="fa-regular fa-copy text-slate-500 group-hover:text-slate-300 transition"></i>
+            </button>
+        </div>
+    </section>
+
+    <section class="max-w-4xl mx-auto px-4 sm:px-6 py-6 grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <div class="p-4 bg-slate-900/40 rounded-xl border border-slate-800/60 flex items-start gap-3">
+            <div class="w-8 h-8 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-sm shrink-0">
+                <i class="fa-solid fa-bolt"></i>
+            </div>
+            <div>
+                <h3 class="text-sm font-semibold text-white">Sangat Cepat</h3>
+                <p class="text-xs text-slate-400 mt-0.5">Respons JSON instan dengan latensi rendah di Android.</p>
+            </div>
+        </div>
+        <div class="p-4 bg-slate-900/40 rounded-xl border border-slate-800/60 flex items-start gap-3">
+            <div class="w-8 h-8 rounded-lg bg-amber-500/10 text-amber-400 flex items-center justify-center text-sm shrink-0">
+                <i class="fa-solid fa-box"></i>
+            </div>
+            <div>
+                <h3 class="text-sm font-semibold text-white">Data Akurat</h3>
+                <p class="text-xs text-slate-400 mt-0.5">Kosakata terstruktur rapi dengan kategori kata.</p>
+            </div>
+        </div>
+        <div class="p-4 bg-slate-900/40 rounded-xl border border-slate-800/60 flex items-start gap-3">
+            <div class="w-8 h-8 rounded-lg bg-purple-500/10 text-purple-400 flex items-center justify-center text-sm shrink-0">
+                <i class="fa-solid fa-lock"></i>
+            </div>
+            <div>
+                <h3 class="text-sm font-semibold text-white">100% Aman</h3>
+                <p class="text-xs text-slate-400 mt-0.5">Database terproteksi aman di backend Vercel.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="docs" class="max-w-4xl mx-auto px-4 sm:px-6 py-12 border-t border-slate-800/60 space-y-8">
+        
+        <div>
+            <h2 class="text-xl sm:text-2xl font-bold text-white mb-1">Panduan Koneksi Android Studio</h2>
+            <p class="text-xs sm:text-sm text-slate-400">Ikuti urutan langkah di bawah ini untuk menghubungkan aplikasi Android Kotlin kamu menggunakan Retrofit.</p>
+        </div>
+
+        <div class="p-4 bg-slate-900/30 rounded-xl border border-slate-800 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs">
+            <div class="flex items-center gap-3">
+                <span class="px-2 py-0.5 font-bold bg-emerald-500/10 text-emerald-400 rounded border border-emerald-500/20">GET</span>
+                <code class="text-slate-200 font-semibold">/cari?kata={kata_kunci}</code>
+            </div>
+            <div class="text-slate-400">
+                Izin Manifest: <code class="text-amber-400">&lt;uses-permission android:name="android.permission.INTERNET" /&gt;</code>
+            </div>
+        </div>
+
+        <div class="space-y-6">
+            
+            <div class="bg-[#0E1322] rounded-xl border border-slate-800 overflow-hidden shadow-xl">
+                <div class="bg-slate-900/90 px-4 py-2.5 border-b border-slate-800 flex items-center justify-between">
+                    <span class="text-xs font-medium text-slate-300"><i class="fa-solid fa-code text-indigo-400 mr-1.5"></i> 1. build.gradle.kts <span class="text-slate-500 text-[10px]">(Module :app)</span></span>
+                    <button onclick="copyCode('code-gradle', this)" class="text-[11px] text-slate-400 hover:text-white transition flex items-center gap-1.5 px-2 py-1 rounded bg-slate-800/50 border border-slate-700/40">
+                        <i class="fa-regular fa-copy"></i> <span>Salin Kode</span>
+                    </button>
+                </div>
+                <pre class="p-4 text-xs text-slate-300 overflow-x-auto"><code id="code-gradle">dependencies {
+    // HTTP Networking jaringan API
+    implementation("com.squareup.retrofit2:retrofit:2.11.0")
+    
+    // Converter untuk mapping otomatis response ke Object Kotlin
+    implementation("com.squareup.retrofit2:converter-gson:2.11.0")
+}</code></pre>
+            </div>
+
+            <div class="bg-[#0E1322] rounded-xl border border-slate-800 overflow-hidden shadow-xl">
+                <div class="bg-slate-900/90 px-4 py-2.5 border-b border-slate-800 flex items-center justify-between">
+                    <span class="text-xs font-medium text-slate-300"><i class="fa-brand fa-kotlin text-indigo-400 mr-1.5"></i> 2. KamusModel.kt <span class="text-slate-500 text-[10px]">(Model Data)</span></span>
+                    <button onclick="copyCode('code-model', this)" class="text-[11px] text-slate-400 hover:text-white transition flex items-center gap-1.5 px-2 py-1 rounded bg-slate-800/50 border border-slate-700/40">
+                        <i class="fa-regular fa-copy"></i> <span>Salin Kode</span>
+                    </button>
+                </div>
+                <pre class="p-4 text-xs text-slate-300 overflow-x-auto"><code id="code-model">import com.google.gson.annotations.SerializedName
+
+data class KamusModel(
+    @SerializedName("bahasa_sasak")
+    val bahasaSasak: String,
+
+    @SerializedName("bahasa_indonesia")
+    val bahasaIndonesia: String,
+
+    @SerializedName("kategori")
+    val kategori: String
+)</code></pre>
+            </div>
+
+            <div class="bg-[#0E1322] rounded-xl border border-slate-800 overflow-hidden shadow-xl">
+                <div class="bg-slate-900/90 px-4 py-2.5 border-b border-slate-800 flex items-center justify-between">
+                    <span class="text-xs font-medium text-slate-300"><i class="fa-solid fa-network-wired text-indigo-400 mr-1.5"></i> 3. ApiService.kt <span class="text-slate-500 text-[10px]">(Retrofit Endpoint)</span></span>
+                    <button onclick="copyCode('code-service', this)" class="text-[11px] text-slate-400 hover:text-white transition flex items-center gap-1.5 px-2 py-1 rounded bg-slate-800/50 border border-slate-700/40">
+                        <i class="fa-regular fa-copy"></i> <span>Salin Kode</span>
+                    </button>
+                </div>
+                <pre class="p-4 text-xs text-slate-300 overflow-x-auto"><code id="code-service">import retrofit2.http.GET
+import retrofit2.http.Query
+
+interface ApiService {
+    // Membawa query parameter '?kata=' sesuai spesifikasi backend
+    @GET("cari")
+    suspend fun cariKata(
+        @Query("kata") kataKey: String
+    ): List&lt;KamusModel&gt;
+}</code></pre>
+            </div>
+
+            <div class="bg-[#0E1322] rounded-xl border border-slate-800 overflow-hidden shadow-xl">
+                <div class="bg-slate-900/90 px-4 py-2.5 border-b border-slate-800 flex items-center justify-between">
+                    <span class="text-xs font-medium text-slate-300"><i class="fa-solid fa-bolt text-indigo-400 mr-1.5"></i> 4. RetrofitClient & Eksekusi <span class="text-slate-500 text-[10px]">(Pemanggilan API)</span></span>
+                    <button onclick="copyCode('code-client', this)" class="text-[11px] text-slate-400 hover:text-white transition flex items-center gap-1.5 px-2 py-1 rounded bg-slate-800/50 border border-slate-700/40">
+                        <i class="fa-regular fa-copy"></i> <span>Salin Kode</span>
+                    </button>
+                </div>
+                <pre class="p-4 text-xs text-slate-300 overflow-x-auto"><code id="code-client">import retrofit2.Retrofit
+import retrofit2.converter.gson.GsonConverterFactory
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
+
+object RetrofitClient {
+    
+    private const val BASE_URL = "https://sasak-api.vercel.app/" 
+
+    val instance: ApiService by lazy {
+        Retrofit.Builder()
+            .baseUrl(BASE_URL)
+            .addConverterFactory(GsonConverterFactory.create())
+            .build()
+            .create(ApiService::class.java)
+    }
+}
+
+
+fun jalankanPencarian(kataKunci: String) {
+    CoroutineScope(Dispatchers.IO).launch {
+        try {
+            val hasilKamus: List&lt;KamusModel&gt; = RetrofitClient.instance.cariKata(kataKunci)
+            
+            withContext(Dispatchers.Main) {
+                // Proses data berhasil didapatkan, masukkan ke RecyclerView / UI kamu
+            }
+        } catch (e: Exception) {
+            e.printStackTrace()
+        }
+    }
+}</code></pre>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="border-t border-slate-900 bg-slate-950/40 py-6 text-center text-[11px] text-slate-500">
+        <p>© 2026 SasakAPI. Dibuat oleh <span class="text-indigo-400 font-medium">Salman Al Farisi</span> untuk Lombok dan Indonesia.</p>
+    </footer>
+
+    <script>
+        
+        const currentDomain = window.location.origin + "/";
+        
+        document.addEventListener("DOMContentLoaded", () => {
+            const cleanDisplay = currentDomain.replace(/^https?:\/\//, "");
+            document.getElementById('base-url-text').innerText = cleanDisplay;
+        });
+
+        
+        function copyBaseUrl() {
+            navigator.clipboard.writeText(currentDomain);
+            const btnText = document.getElementById('base-url-text');
+            const originalText = btnText.innerText;
+            btnText.innerText = "Tersalin ke Android Studio! 🎉";
+            btnText.style.color = "#34D399";
+            
+            setTimeout(() => {
+                btnText.innerText = originalText;
+                btnText.style.color = "";
+            }, 2500);
+        }
+
+        function copyCode(elementId, buttonElement) {
+            const codeText = document.getElementById(elementId).innerText;
+            navigator.clipboard.writeText(codeText);
+            
+            const originalContent = buttonElement.innerHTML;
+            buttonElement.innerHTML = `<i class="fa-solid fa-check text-emerald-400"></i> <span class="text-emerald-400 font-medium">Tersalin! 🎉</span>`;
+            buttonElement.classList.add('border-emerald-500/30', 'bg-emerald-500/5');
+            
+            setTimeout(() => {
+                buttonElement.innerHTML = originalContent;
+                buttonElement.classList.remove('border-emerald-500/30', 'bg-emerald-500/5');
+            }, 2000);
+        }
+    </script>
+</body>
+</html>
