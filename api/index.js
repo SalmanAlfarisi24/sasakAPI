@@ -8,7 +8,6 @@ app.use(cors());
 app.use(express.json());
 
 app.get('/cari', (req, res) => {
-    // Membaca file kamus.json dari folder root luar menggunakan path absolute
     const filePath = path.join(process.cwd(), 'kamus.json');
     
     fs.readFile(filePath, 'utf8', (err, data) => {
@@ -27,7 +26,6 @@ app.get('/cari', (req, res) => {
             return res.json(hasilFilter);
         }
 
-        // TIPS KEAMANAN: Jangan kirim semua data jika diakses kosongan
         res.status(400).json({ status: "error", message: "Gunakan parameter ?kata= untuk mencari data." });
     });
 });
