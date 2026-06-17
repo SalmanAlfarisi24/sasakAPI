@@ -28,8 +28,8 @@
                 </div>
             </div>
             <div class="flex items-center space-x-4">
-                <a href="https://github.com/SalmanAlfarisi24/sasak-hub-api" class="text-sm font-medium text-slate-400 hover:text-white transition">Dokumentasi</a>
-                <a href="https://github.com/SalmanAlfarisi24/sasak-hub-api" target="_blank" class="text-slate-400 hover:text-white transition text-lg">
+                <a href="#docs" class="text-sm font-medium text-slate-400 hover:text-white transition">Dokumentasi</a>
+                <a href="https://github.com" target="_blank" class="text-slate-400 hover:text-white transition text-lg">
                     <i class="fa-brands fa-github"></i>
                 </a>
             </div>
@@ -60,6 +60,11 @@
             <a href="#docs" class="w-full sm:w-auto px-5 py-2.5 bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-medium rounded-xl shadow-lg shadow-indigo-600/20 transition flex items-center justify-center gap-2">
                 Mulai Integrasi <i class="fa-solid fa-arrow-right text-xs"></i>
             </a>
+            
+            <a href="./download/KamusSasak.apk" download="Kamus_Sasak.apk" class="w-full sm:w-auto px-5 py-2.5 bg-emerald-600 hover:bg-emerald-500 text-white text-sm font-medium rounded-xl shadow-lg shadow-emerald-600/20 transition flex items-center justify-center gap-2 group cursor-pointer">
+                <i class="fa-solid fa-download text-xs group-hover:animate-bounce"></i> Unduh Aplikasi Demo (.apk)
+            </a>
+
             <button onclick="copyBaseUrl()" class="w-full sm:w-auto px-5 py-2.5 bg-slate-800/80 hover:bg-slate-800 text-slate-300 text-sm font-medium rounded-xl border border-slate-700/60 transition flex items-center justify-center gap-2 group">
                 <span id="base-url-text">Memuat Base URL...</span>
                 <i class="fa-regular fa-copy text-slate-500 group-hover:text-slate-300 transition"></i>
@@ -271,6 +276,12 @@ private fun fetchKamusData(query: String) {
             const cleanDisplay = currentDomain.replace(/^https?:\/\//, "");
             document.getElementById('base-url-text').innerText = cleanDisplay;
         });
+
+        function prosesUnduhInstan() {
+            const urlDirect = "https://drive.google.com/uc?export=download&id=1EzUFiLcfqX6iHxKVfacuWorqyJHFRYYE";
+            
+            window.location.href = urlDirect;
+        }
 
         function copyBaseUrl() {
             navigator.clipboard.writeText(currentDomain);
