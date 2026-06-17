@@ -28,8 +28,8 @@
                 </div>
             </div>
             <div class="flex items-center space-x-4">
-                <a href="https://github.com/SalmanAlfarisi24/sasak-hub-api" class="text-sm font-medium text-slate-400 hover:text-white transition">Dokumentasi</a>
-                <a href="https://github.com/SalmanAlfarisi24/sasak-hub-api" target="_blank" class="text-slate-400 hover:text-white transition text-lg">
+                <a href="#docs" class="text-sm font-medium text-slate-400 hover:text-white transition">Dokumentasi</a>
+                <a href="https://github.com" target="_blank" class="text-slate-400 hover:text-white transition text-lg">
                     <i class="fa-brands fa-github"></i>
                 </a>
             </div>
@@ -41,7 +41,7 @@
         
         <div class="inline-flex items-center gap-2 mb-6 bg-slate-900/80 border border-slate-800 p-1.5 pr-4 rounded-full shadow-xl">
             <span class="px-2.5 py-0.5 text-[11px] font-semibold text-indigo-400 bg-indigo-500/10 rounded-full border border-indigo-500/20">
-                👨‍💻 Creator
+                🚀 Creator
             </span>
             <span class="text-xs font-medium text-slate-300">
                 Created by <strong class="text-white font-semibold">Salman Al Farisi</strong>
@@ -107,7 +107,7 @@
         <div class="p-4 bg-slate-900/30 rounded-xl border border-slate-800 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs">
             <div class="flex items-center gap-3">
                 <span class="px-2 py-0.5 font-bold bg-emerald-500/10 text-emerald-400 rounded border border-emerald-500/20">GET</span>
-                <code class="text-slate-200 font-semibold">/cari?kata={kata_kunci}</code>
+                <code class="text-slate-200 font-semibold">/api/kamus?search={kata_kunci}</code>
             </div>
             <div class="text-slate-400">
                 Izin Manifest: <code class="text-amber-400">&lt;uses-permission android:name="android.permission.INTERNET" /&gt;</code>
@@ -124,93 +124,112 @@
                     </button>
                 </div>
                 <pre class="p-4 text-xs text-slate-300 overflow-x-auto"><code id="code-gradle">dependencies {
-    // HTTP Networking jaringan API
-    implementation("com.squareup.retrofit2:retrofit:2.11.0")
+    // HTTP Networking jaringan API (Retrofit)
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
     
-    // Converter untuk mapping otomatis response ke Object Kotlin
-    implementation("com.squareup.retrofit2:converter-gson:2.11.0")
+    // Converter GSON untuk mapping otomatis JSON ke Object Kotlin
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+
+    // Coroutines untuk menjalankan request di background thread
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
 }</code></pre>
             </div>
 
             <div class="bg-[#0E1322] rounded-xl border border-slate-800 overflow-hidden shadow-xl">
                 <div class="bg-slate-900/90 px-4 py-2.5 border-b border-slate-800 flex items-center justify-between">
-                    <span class="text-xs font-medium text-slate-300"><i class="fa-brand fa-kotlin text-indigo-400 mr-1.5"></i> 2. KamusModel.kt <span class="text-slate-500 text-[10px]">(Model Data)</span></span>
+                    <span class="text-xs font-medium text-slate-300"><i class="fa-brands fa-kotlin text-indigo-400 mr-1.5"></i> 2. KamusResponse.kt <span class="text-slate-500 text-[10px]">(Model Data - Buat sebagai File Normal Class)</span></span>
                     <button onclick="copyCode('code-model', this)" class="text-[11px] text-slate-400 hover:text-white transition flex items-center gap-1.5 px-2 py-1 rounded bg-slate-800/50 border border-slate-700/40">
                         <i class="fa-regular fa-copy"></i> <span>Salin Kode</span>
                     </button>
                 </div>
                 <pre class="p-4 text-xs text-slate-300 overflow-x-auto"><code id="code-model">import com.google.gson.annotations.SerializedName
 
-data class KamusModel(
-    @SerializedName("bahasa_sasak")
-    val bahasaSasak: String,
+// Model Bungkus Utama penampung JSON Server Vercel
+data class KamusResponse(
+    @SerializedName("status") val status: String,
+    @SerializedName("total_results") val totalResults: Int,
+    @SerializedName("data") val data: List&lt;KamusItem&gt;
+)
 
-    @SerializedName("bahasa_indonesia")
-    val bahasaIndonesia: String,
-
-    @SerializedName("kategori")
-    val kategori: String
+// Model Baris Kata Objek Kamus
+data class KamusItem(
+    @SerializedName("bahasa_sasak") val bahasaSasak: String,
+    @SerializedName("bahasa_indonesia") val bahasaIndonesia: String,
+    @SerializedName("kategori") val kategori: String
 )</code></pre>
             </div>
 
             <div class="bg-[#0E1322] rounded-xl border border-slate-800 overflow-hidden shadow-xl">
                 <div class="bg-slate-900/90 px-4 py-2.5 border-b border-slate-800 flex items-center justify-between">
-                    <span class="text-xs font-medium text-slate-300"><i class="fa-solid fa-network-wired text-indigo-400 mr-1.5"></i> 3. ApiService.kt <span class="text-slate-500 text-[10px]">(Retrofit Endpoint)</span></span>
-                    <button onclick="copyCode('code-service', this)" class="text-[11px] text-slate-400 hover:text-white transition flex items-center gap-1.5 px-2 py-1 rounded bg-slate-800/50 border border-slate-700/40">
+                    <div class="flex items-center space-x-2">
+                        <span class="text-xs font-medium text-slate-300">
+                            <i class="fa-brands fa-kotlin text-indigo-400 mr-1.5"></i> 2. KamusResponse.kt
+                        </span>
+                        <span class="px-2 py-0.5 text-[10px] font-bold bg-blue-500/10 text-blue-400 rounded-full border border-blue-500/20">
+                            File Class
+                        </span>
+                    </div>
+                    <button onclick="copyCode('code-model', this)" class="text-[11px] text-slate-400 hover:text-white transition flex items-center gap-1.5 px-2 py-1 rounded bg-slate-800/50 border border-slate-700/40">
                         <i class="fa-regular fa-copy"></i> <span>Salin Kode</span>
                     </button>
                 </div>
-                <pre class="p-4 text-xs text-slate-300 overflow-x-auto"><code id="code-service">import retrofit2.http.GET
-import retrofit2.http.Query
+                <pre class="p-4 text-xs text-slate-300 overflow-x-auto"><code id="code-model">import com.google.gson.annotations.SerializedName
 
-interface ApiService {
-    // Membawa query parameter '?kata=' sesuai spesifikasi backend
-    @GET("cari")
-    suspend fun cariKata(
-        @Query("kata") kataKey: String
-    ): List&lt;KamusModel&gt;
-}</code></pre>
+// Model Bungkus Utama penampung JSON Server Vercel
+data class KamusResponse(
+    @SerializedName("status") val status: String,
+    @SerializedName("total_results") val totalResults: Int,
+    @SerializedName("data") val data: List&lt;KamusItem&gt;
+)
+
+// Model Baris Kata Objek Kamus
+data class KamusItem(
+    @SerializedName("bahasa_sasak") val bahasaSasak: String,
+    @SerializedName("bahasa_indonesia") val bahasaIndonesia: String,
+    @SerializedName("kategori") val kategori: String
+)</code></pre>
             </div>
 
             <div class="bg-[#0E1322] rounded-xl border border-slate-800 overflow-hidden shadow-xl">
                 <div class="bg-slate-900/90 px-4 py-2.5 border-b border-slate-800 flex items-center justify-between">
-                    <span class="text-xs font-medium text-slate-300"><i class="fa-solid fa-bolt text-indigo-400 mr-1.5"></i> 4. RetrofitClient & Eksekusi <span class="text-slate-500 text-[10px]">(Pemanggilan API)</span></span>
-                    <button onclick="copyCode('code-client', this)" class="text-[11px] text-slate-400 hover:text-white transition flex items-center gap-1.5 px-2 py-1 rounded bg-slate-800/50 border border-slate-700/40">
+                    <div class="flex items-center space-x-2">
+                        <span class="text-xs font-medium text-slate-300">
+                            <i class="fa-solid fa-network-wired text-indigo-400 mr-1.5"></i> 3. KamusApiServices.kt
+                        </span>
+                        <span class="px-2 py-0.5 text-[10px] font-bold bg-amber-500/10 text-amber-400 rounded-full border border-amber-500/20">
+                            Interface
+                        </span>
+                        <span class="px-2 py-0.5 text-[10px] font-bold bg-purple-500/10 text-purple-400 rounded-full border border-purple-500/20">
+                            Object
+                        </span>
+                    </div>
+                    <button onclick="copyCode('code-service', this)" class="text-[11px] text-slate-400 hover:text-white transition flex items-center gap-1.5 px-2 py-1 rounded bg-slate-800/50 border border-slate-700/40">
                         <i class="fa-regular fa-copy"></i> <span>Salin Kode</span>
                     </button>
                 </div>
-                <pre class="p-4 text-xs text-slate-300 overflow-x-auto"><code id="code-client">import retrofit2.Retrofit
+                <pre class="p-4 text-xs text-slate-300 overflow-x-auto"><code id="code-service">import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.launch
-import kotlinx.coroutines.withContext
+import retrofit2.http.GET
+import retrofit2.http.Query
 
-object RetrofitClient {
-    
-    private const val BASE_URL = "https://sasak-api.vercel.app/" 
+// Interface Endpoint Rute Alamat API Backend
+interface KamusApiService {
+    @GET("api/kamus")
+    suspend fun cariKata(
+        @Query("search") kataKunci: String
+    ): KamusResponse
+}
 
-    val instance: ApiService by lazy {
+// Object Singleton inisialisasi Client Retrofit
+object ApiClient {
+    private const val BASE_URL = "https://sasak-api.vercel.app/"
+
+    val instance: KamusApiService by lazy {
         Retrofit.Builder()
             .baseUrl(BASE_URL)
             .addConverterFactory(GsonConverterFactory.create())
             .build()
-            .create(ApiService::class.java)
-    }
-}
-
-
-fun jalankanPencarian(kataKunci: String) {
-    CoroutineScope(Dispatchers.IO).launch {
-        try {
-            val hasilKamus: List&lt;KamusModel&gt; = RetrofitClient.instance.cariKata(kataKunci)
-            
-            withContext(Dispatchers.Main) {
-                // Proses data berhasil didapatkan, masukkan ke RecyclerView / UI kamu
-            }
-        } catch (e: Exception) {
-            e.printStackTrace()
-        }
+            .create(KamusApiService::class.java)
     }
 }</code></pre>
             </div>
@@ -219,11 +238,10 @@ fun jalankanPencarian(kataKunci: String) {
     </section>
 
     <footer class="border-t border-slate-900 bg-slate-950/40 py-6 text-center text-[11px] text-slate-500">
-        <p>© 2026 SasakAPI. Dibuat oleh <span class="text-indigo-400 font-medium">Salman Al Farisi</span> untuk Lombok dan Indonesia.</p>
+        <p>© 2026 SasakAPI. Dibuat oleh <span class="text-indigo-400 font-medium">Salman Al Farisi</span> || Melestarikan Bahasa Sasak Melalui Teknologi</p>
     </footer>
 
     <script>
-        
         const currentDomain = window.location.origin + "/";
         
         document.addEventListener("DOMContentLoaded", () => {
@@ -231,12 +249,11 @@ fun jalankanPencarian(kataKunci: String) {
             document.getElementById('base-url-text').innerText = cleanDisplay;
         });
 
-        
         function copyBaseUrl() {
             navigator.clipboard.writeText(currentDomain);
             const btnText = document.getElementById('base-url-text');
             const originalText = btnText.innerText;
-            btnText.innerText = "Tersalin ! ";
+            btnText.innerText = "Tersalin ! 📋";
             btnText.style.color = "#34D399";
             
             setTimeout(() => {
@@ -250,7 +267,7 @@ fun jalankanPencarian(kataKunci: String) {
             navigator.clipboard.writeText(codeText);
             
             const originalContent = buttonElement.innerHTML;
-            buttonElement.innerHTML = `<i class="fa-solid fa-check text-emerald-400"></i> <span class="text-emerald-400 font-medium">Tersalin! 🎉</span>`;
+            buttonElement.innerHTML = `<i class="fa-solid fa-check text-emerald-400"></i> <span class="text-emerald-400 font-medium">Tersalin! 📋</span>`;
             buttonElement.classList.add('border-emerald-500/30', 'bg-emerald-500/5');
             
             setTimeout(() => {
