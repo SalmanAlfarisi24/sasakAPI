@@ -14,17 +14,11 @@
         body { font-family: 'Plus Jakarta Sans', sans-serif; }
         code { font-family: 'JetBrains Mono', monospace; }
 
-        /* ========================================================
-           🔥 PERBAIKAN TOTAL ELEMEN DARK MODE UNTUK TAILWIND V4 CDN
-           ======================================================== */
-        
-        /* Ketika class 'light' TIDAK ADA pada tag html (MODE DARK DEFAULT AKTIF) */
         html:not(.light) {
             background-color: #0B0F19 !important;
             color: #E2E8F0 !important;
         }
         
-        /* 1. Memaksa Header Ikut Gelap */
         html:not(.light) header {
             background-color: rgba(11, 15, 25, 0.8) !important;
             border-color: rgba(30, 41, 59, 0.8) !important;
@@ -34,13 +28,13 @@
             color: #ffffff !important;
         }
 
-        /* 2. Memaksa Tombol Toggle Tema Ikut Gelap */
+        
         html:not(.light) #theme-toggle-btn {
             background-color: rgba(15, 23, 42, 0.8) !important;
             border-color: #1e293b !important;
         }
 
-        /* 3. Memaksa Tombol Base URL & Salin Kode Ikut Gelap */
+        
         html:not(.light) button.w-full,
         html:not(.light) button[onclick*="copyCode"] {
             background-color: rgba(30, 41, 59, 0.5) !important;
@@ -48,7 +42,7 @@
             color: #cbd5e1 !important;
         }
 
-        /* 4. Sinkronisasi Sisa Container Utuh Tailwind */
+        
         html:not(.light) .dark\:bg-\[\#0B0F19\] { background-color: #0B0F19 !important; }
         html:not(.light) .dark\:bg-\[\#0E1322\] { background-color: #0E1322 !important; }
         html:not(.light) .dark\:bg-slate-900\/40 { background-color: rgba(15, 23, 42, 0.4) !important; }
@@ -64,7 +58,7 @@
     </style>
     
     <script>
-        // Membaca preferensi memori browser sebelum halaman sempat merender warna putih
+        
         if (localStorage.getItem('theme') === 'light') {
             document.documentElement.classList.add('light');
         } else {
