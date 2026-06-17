@@ -28,8 +28,8 @@
                 </div>
             </div>
             <div class="flex items-center space-x-4">
-                <a href="#docs" class="text-sm font-medium text-slate-400 hover:text-white transition">Dokumentasi</a>
-                <a href="https://github.com" target="_blank" class="text-slate-400 hover:text-white transition text-lg">
+                <a href="https://github.com/SalmanAlfarisi24/sasak-hub-api" class="text-sm font-medium text-slate-400 hover:text-white transition">Dokumentasi</a>
+                <a href="https://github.com/SalmanAlfarisi24/sasak-hub-api" target="_blank" class="text-slate-400 hover:text-white transition text-lg">
                     <i class="fa-brands fa-github"></i>
                 </a>
             </div>
@@ -124,39 +124,17 @@
                     </button>
                 </div>
                 <pre class="p-4 text-xs text-slate-300 overflow-x-auto"><code id="code-gradle">dependencies {
-    // HTTP Networking jaringan API (Retrofit)
+    //.....Kode Implementasi Lainnya.....
+    
+    // HTTP Networking jaringan API
     implementation("com.squareup.retrofit2:retrofit:2.9.0")
     
-    // Converter GSON untuk mapping otomatis JSON ke Object Kotlin
+    // Converter GSON untuk mapping otomatis data ke Object Kotlin
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
 
     // Coroutines untuk menjalankan request di background thread
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
 }</code></pre>
-            </div>
-
-            <div class="bg-[#0E1322] rounded-xl border border-slate-800 overflow-hidden shadow-xl">
-                <div class="bg-slate-900/90 px-4 py-2.5 border-b border-slate-800 flex items-center justify-between">
-                    <span class="text-xs font-medium text-slate-300"><i class="fa-brands fa-kotlin text-indigo-400 mr-1.5"></i> 2. KamusResponse.kt <span class="text-slate-500 text-[10px]">(Model Data - Buat sebagai File Normal Class)</span></span>
-                    <button onclick="copyCode('code-model', this)" class="text-[11px] text-slate-400 hover:text-white transition flex items-center gap-1.5 px-2 py-1 rounded bg-slate-800/50 border border-slate-700/40">
-                        <i class="fa-regular fa-copy"></i> <span>Salin Kode</span>
-                    </button>
-                </div>
-                <pre class="p-4 text-xs text-slate-300 overflow-x-auto"><code id="code-model">import com.google.gson.annotations.SerializedName
-
-// Model Bungkus Utama penampung JSON Server Vercel
-data class KamusResponse(
-    @SerializedName("status") val status: String,
-    @SerializedName("total_results") val totalResults: Int,
-    @SerializedName("data") val data: List&lt;KamusItem&gt;
-)
-
-// Model Baris Kata Objek Kamus
-data class KamusItem(
-    @SerializedName("bahasa_sasak") val bahasaSasak: String,
-    @SerializedName("bahasa_indonesia") val bahasaIndonesia: String,
-    @SerializedName("kategori") val kategori: String
-)</code></pre>
             </div>
 
             <div class="bg-[#0E1322] rounded-xl border border-slate-800 overflow-hidden shadow-xl">
@@ -175,7 +153,7 @@ data class KamusItem(
                 </div>
                 <pre class="p-4 text-xs text-slate-300 overflow-x-auto"><code id="code-model">import com.google.gson.annotations.SerializedName
 
-// Model Bungkus Utama penampung JSON Server Vercel
+// Model Bungkus Utama penampung data Server Vercel
 data class KamusResponse(
     @SerializedName("status") val status: String,
     @SerializedName("total_results") val totalResults: Int,
@@ -198,9 +176,6 @@ data class KamusItem(
                         </span>
                         <span class="px-2 py-0.5 text-[10px] font-bold bg-amber-500/10 text-amber-400 rounded-full border border-amber-500/20">
                             Interface
-                        </span>
-                        <span class="px-2 py-0.5 text-[10px] font-bold bg-purple-500/10 text-purple-400 rounded-full border border-purple-500/20">
-                            Object
                         </span>
                     </div>
                     <button onclick="copyCode('code-service', this)" class="text-[11px] text-slate-400 hover:text-white transition flex items-center gap-1.5 px-2 py-1 rounded bg-slate-800/50 border border-slate-700/40">
@@ -230,6 +205,54 @@ object ApiClient {
             .addConverterFactory(GsonConverterFactory.create())
             .build()
             .create(KamusApiService::class.java)
+    }
+}</code></pre>
+            </div>
+
+            <div class="bg-[#0E1322] rounded-xl border border-slate-800 overflow-hidden shadow-xl">
+                <div class="bg-slate-900/90 px-4 py-2.5 border-b border-slate-800 flex items-center justify-between">
+                    <div class="flex items-center space-x-2">
+                        <span class="text-xs font-medium text-slate-300">
+                            <i class="fa-solid fa-bolt text-indigo-400 mr-1.5"></i> 4. MainActivity.kt <span class="text-slate-500 text-[10px]">(Request Execution)</span>
+                        </span>
+                        <span class="px-2 py-0.5 text-[10px] font-bold bg-emerald-500/10 text-emerald-400 rounded-full border border-emerald-500/20">
+                            Activity Class
+                        </span>
+                    </div>
+                    <button onclick="copyCode('code-mainactivity', this)" class="text-[11px] text-slate-400 hover:text-white transition flex items-center gap-1.5 px-2 py-1 rounded bg-slate-800/50 border border-slate-700/40">
+                        <i class="fa-regular fa-copy"></i> <span>Salin Kode</span>
+                    </button>
+                </div>
+                <pre class="p-4 text-xs text-slate-300 overflow-x-auto"><code id="code-mainactivity">import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
+import android.view.View
+
+private fun fetchKamusData(query: String) {
+    progressBar.visibility = View.VISIBLE
+
+    // Menjalankan request di Background Thread via Coroutines
+    CoroutineScope(Dispatchers.IO).launch {
+        try {
+            val response = ApiClient.instance.cariKata(query)
+
+            // Berpindah ke Main Thread untuk memperbarui UI 
+            withContext(Dispatchers.Main) {
+                progressBar.visibility = View.GONE
+                if (response.status == "success" && response.data.isNotEmpty()) {
+                    // Update data ke RecyclerView Adapter kamu
+                    kamusAdapter.updateData(response.data)
+                } else {
+                    kamusAdapter.updateData(arrayListOf())
+                }
+            }
+        } catch (e: Exception) {
+            withContext(Dispatchers.Main) {
+                progressBar.visibility = View.GONE
+                e.printStackTrace()
+            }
+        }
     }
 }</code></pre>
             </div>
