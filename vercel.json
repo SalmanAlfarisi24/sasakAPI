@@ -1,9 +1,18 @@
 {
   "version": 2,
+  "builds": [
+    {
+      "src": "api/kamus.js",
+      "use": "@vercel/node"
+    }
+  ],
   "routes": [
     {
       "src": "/api/kamus",
       "dest": "/api/kamus.js"
+    },
+    {
+      "handle": "filesystem"
     },
     {
       "src": "/(.*)",
