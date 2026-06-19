@@ -121,6 +121,7 @@
 
         <div class="space-y-6">
             
+            <!-- STEP 1: GRADLE -->
             <div class="bg-[#0E1322] rounded-xl border border-slate-800 overflow-hidden shadow-xl">
                 <div class="bg-slate-900/90 px-4 py-2.5 border-b border-slate-800 flex items-center justify-between">
                     <span class="text-xs font-medium text-slate-300"><i class="fa-solid fa-code text-indigo-400 mr-1.5"></i> 1. build.gradle.kts <span class="text-slate-500 text-[10px]">(Module :app)</span></span>
@@ -142,6 +143,7 @@
 }</code></pre>
             </div>
 
+            <!-- STEP 2: RESPONSE MODEL -->
             <div class="bg-[#0E1322] rounded-xl border border-slate-800 overflow-hidden shadow-xl">
                 <div class="bg-slate-900/90 px-4 py-2.5 border-b border-slate-800 flex items-center justify-between">
                     <div class="flex items-center space-x-2">
@@ -173,6 +175,7 @@ data class KamusItem(
 )</code></pre>
             </div>
 
+            <!-- STEP 3: API SERVICES -->
             <div class="bg-[#0E1322] rounded-xl border border-slate-800 overflow-hidden shadow-xl">
                 <div class="bg-slate-900/90 px-4 py-2.5 border-b border-slate-800 flex items-center justify-between">
                     <div class="flex items-center space-x-2">
@@ -180,7 +183,7 @@ data class KamusItem(
                             <i class="fa-solid fa-network-wired text-indigo-400 mr-1.5"></i> 3. KamusApiServices.kt
                         </span>
                         <span class="px-2 py-0.5 text-[10px] font-bold bg-amber-500/10 text-amber-400 rounded-full border border-amber-500/20">
-                            Interface
+                            File Interface
                         </span>
                     </div>
                     <button onclick="copyCode('code-service', this)" class="text-[11px] text-slate-400 hover:text-white transition flex items-center gap-1.5 px-2 py-1 rounded bg-slate-800/50 border border-slate-700/40">
@@ -214,11 +217,66 @@ object ApiClient {
 }</code></pre>
             </div>
 
+            <!-- STEP 4: KAMUS ADAPTER (YANG BARU) -->
             <div class="bg-[#0E1322] rounded-xl border border-slate-800 overflow-hidden shadow-xl">
                 <div class="bg-slate-900/90 px-4 py-2.5 border-b border-slate-800 flex items-center justify-between">
                     <div class="flex items-center space-x-2">
                         <span class="text-xs font-medium text-slate-300">
-                            <i class="fa-solid fa-bolt text-indigo-400 mr-1.5"></i> 4. MainActivity.kt <span class="text-slate-500 text-[10px]">(Request Execution)</span>
+                            <i class="fa-brands fa-kotlin text-indigo-400 mr-1.5"></i> 4. KamusAdapter.kt
+                        </span>
+                        <span class="px-2 py-0.5 text-[10px] font-bold bg-blue-500/10 text-blue-400 rounded-full border border-blue-500/20">
+                            File Class
+                        </span>
+                    </div>
+                    <button onclick="copyCode('code-adapter', this)" class="text-[11px] text-slate-400 hover:text-white transition flex items-center gap-1.5 px-2 py-1 rounded bg-slate-800/50 border border-slate-700/40">
+                        <i class="fa-regular fa-copy"></i> <span>Salin Kode</span>
+                    </button>
+                </div>
+                <pre class="p-4 text-xs text-slate-300 overflow-x-auto"><code id="code-adapter">import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import android.widget.TextView
+import androidx.recyclerview.widget.RecyclerView
+
+class KamusAdapter(private var listKata: ArrayList&lt;KamusItem&gt;) :
+    RecyclerView.Adapter&lt;KamusAdapter.KamusViewHolder&gt;() {
+
+    // Sesuaikan id yang ada di layout xml
+    class KamusViewHolder(view: View) : RecyclerView.ViewHolder(view) {
+        val tvSasak: TextView = view.findViewById(R.id.tv_bahasa_sasak)
+        val tvIndonesia: TextView = view.findViewById(R.id.tv_bahasa_indonesia)
+        val tvKategori: TextView = view.findViewById(R.id.tv_kategori)
+    }
+
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): KamusViewHolder {
+        val view = LayoutInflater.from(parent.context)
+            .inflate(R.layout.item_kamus, parent, false)
+        return KamusViewHolder(view)
+    }
+
+    override fun onBindViewHolder(holder: KamusViewHolder, position: Int) {
+        val item = listKata[position]
+        holder.tvSasak.text = item.bahasaSasak
+        holder.tvIndonesia.text = item.bahasaIndonesia
+        holder.tvKategori.text = item.kategori
+    }
+
+    override fun getItemCount(): Int = listKata.size
+
+    fun updateData(newList: List&lt;KamusItem&gt;) {
+        listKata.clear()
+        listKata.addAll(newList)
+        notifyDataSetChanged()
+    }
+}</code></pre>
+            </div>
+
+            <!-- STEP 5: MAIN ACTIVITY -->
+            <div class="bg-[#0E1322] rounded-xl border border-slate-800 overflow-hidden shadow-xl">
+                <div class="bg-slate-900/90 px-4 py-2.5 border-b border-slate-800 flex items-center justify-between">
+                    <div class="flex items-center space-x-2">
+                        <span class="text-xs font-medium text-slate-300">
+                            <i class="fa-solid fa-bolt text-indigo-400 mr-1.5"></i> 5. MainActivity.kt <span class="text-slate-500 text-[10px]">(Request Execution)</span>
                         </span>
                         <span class="px-2 py-0.5 text-[10px] font-bold bg-emerald-500/10 text-emerald-400 rounded-full border border-emerald-500/20">
                             Activity Class
@@ -310,7 +368,9 @@ private fun fetchKamusData(query: String) {
             }, 2000);
         }
     </script>
-<script>
+    
+    <!-- Script Tracking Analytics Resmi Vercel untuk HTML Biasa (Vanilla JS) -->
+    <script>
       window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
     </script>
     <script defer src="/_vercel/insights/script.js"></script>
