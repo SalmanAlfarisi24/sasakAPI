@@ -195,7 +195,7 @@
         "kategori": "Kata Benda"
     },
     {
-        "bahasa_sasak": "Siaq",
+        "bahasa_sasak": "Siwaq",
         "bahasa_indonesia": "Sembilan",
         "kategori": "Kata Benda"
     },
@@ -290,7 +290,7 @@
         "kategori": "Kata Benda"
     },
     {
-        "bahasa_sasak": "Siak",
+        "bahasa_sasak": "Siwak",
         "bahasa_indonesia": "Sembilan",
         "kategori": "Kata Benda"
     },
@@ -990,7 +990,7 @@
         "kategori": "Kata Benda"
     },
     {
-        "bahasa_sasak": "Sia",
+        "bahasa_sasak": "Side",
         "bahasa_indonesia": "Kamu (Halus)",
         "kategori": "Kata Benda"
     },
@@ -2485,11 +2485,6 @@
         "kategori": "Kata Sifat"
     },
     {
-        "bahasa_sasak": "Sial",
-        "bahasa_indonesia": "Apes",
-        "kategori": "Kata Sifat"
-    },
-    {
         "bahasa_sasak": "Uwah",
         "bahasa_indonesia": "Telah",
         "kategori": "Kata Sifat"
@@ -3765,12 +3760,12 @@
         "kategori": "Kata Sifat"
     },
     {
-        "bahasa_sasak": "Belek",
+        "bahasa_sasak": "Ke-Belek",
         "bahasa_indonesia": "Amat besar",
         "kategori": "Kata Sifat"
     },
     {
-        "bahasa_sasak": "Kodek",
+        "bahasa_sasak": "Ke-Kodek",
         "bahasa_indonesia": "Amat kecil",
         "kategori": "Kata Sifat"
     },
@@ -3982,16 +3977,6 @@
     {
         "bahasa_sasak": "Aget",
         "bahasa_indonesia": "Mendapat mujur",
-        "kategori": "Kata Sifat"
-    },
-    {
-        "bahasa_sasak": "Sial",
-        "bahasa_indonesia": "Mendapat apes",
-        "kategori": "Kata Sifat"
-    },
-    {
-        "bahasa_sasak": "Uwah",
-        "bahasa_indonesia": "Sudah selesai laku",
         "kategori": "Kata Sifat"
     },
     {
@@ -4376,7 +4361,7 @@
     },
     {
         "bahasa_sasak": "Sial-gati",
-        "bahasa_indonesia": "Sangat Apes",
+        "bahasa_indonesia": "Sangat Apes/Malang",
         "kategori": "Kata Sifat"
     },
     {
@@ -10710,21 +10695,6 @@
         "kategori": "Kata Sifat"
     },
     {
-        "bahasa_sasak": "Bungkek",
-        "bahasa_indonesia": "Kerdil",
-        "kategori": "Kata Sifat"
-    },
-    {
-        "bahasa_sasak": "Belek",
-        "bahasa_indonesia": "Akbar",
-        "kategori": "Kata Sifat"
-    },
-    {
-        "bahasa_sasak": "Kodeq",
-        "bahasa_indonesia": "Mini",
-        "kategori": "Kata Sifat"
-    },
-    {
         "bahasa_sasak": "Solah",
         "bahasa_indonesia": "Elok",
         "kategori": "Kata Sifat"
@@ -13060,11 +13030,6 @@
         "kategori": "Kata Benda"
     },
     {
-        "bahasa_sasak": "Siaq",
-        "bahasa_indonesia": "Sembilan",
-        "kategori": "Kata Benda"
-    },
-    {
         "bahasa_sasak": "Ines",
         "bahasa_indonesia": "Dingin",
         "kategori": "Kata Sifat"
@@ -13153,11 +13118,6 @@
         "bahasa_sasak": "Gili",
         "bahasa_indonesia": "Pulau",
         "kategori": "Kata Benda"
-    },
-    {
-        "bahasa_sasak": "Merariq",
-        "bahasa_indonesia": "Nikah",
-        "kategori": "Kata Kerja"
     },
     {
         "bahasa_sasak": "Ngebeli",
@@ -13285,11 +13245,6 @@
         "kategori": "Kata Sifat"
     },
     {
-        "bahasa_sasak": "Uwah",
-        "bahasa_indonesia": "Sudah",
-        "kategori": "Kata Sifat"
-    },
-    {
         "bahasa_sasak": "Endep",
         "bahasa_indonesia": "Rendah",
         "kategori": "Kata Sifat"
@@ -13303,16 +13258,6 @@
         "bahasa_sasak": "Ilaq",
         "bahasa_indonesia": "Malu",
         "kategori": "Kata Sifat"
-    },
-    {
-        "bahasa_sasak": "Siliq",
-        "bahasa_indonesia": "Marah",
-        "kategori": "Kata Sifat"
-    },
-    {
-        "bahasa_sasak": "Saduq",
-        "bahasa_indonesia": "Percaya",
-        "kategori": "Kata Kerja"
     },
     {
         "bahasa_sasak": "Pelih",
@@ -14440,7 +14385,7 @@
         "kategori": "Kata Sifat"
     },
     {
-        "bahasa_sasak": "Kodekanq",
+        "bahasa_sasak": "Kodek-anq",
         "bahasa_indonesia": "Pengecilan",
         "kategori": "Kata Kerja"
     },
@@ -17445,8 +17390,1073 @@
         "kategori": "Kata Benda"
     },
     {
-        "bahasa_sasak": "Keterangan_Sistem",
-        "bahasa_indonesia": "Pemberitahuan: Seluruh Variasi dan kosakata sudah habis _SalmanAlFarisi_.",
-        "kategori": "Kata Benda"
-    }
+"bahasa_sasak": "Sai",
+"bahasa_indonesia": "Siapa",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Ape",
+"bahasa_indonesia": "Apa",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Mbe",
+"bahasa_indonesia": "Mana",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Pire",
+"bahasa_indonesia": "Berapa",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Berembe",
+"bahasa_indonesia": "Bagaimana",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Kengku",
+"bahasa_indonesia": "Bagaimana (dialek lain)",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Pidisan",
+"bahasa_indonesia": "Kapan",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Ndekman",
+"bahasa_indonesia": "Belumkah",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Karing-pire",
+"bahasa_indonesia": "Tinggal berapa",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Aget-pire",
+"bahasa_indonesia": "Berapa untungnya",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Lalo-mbe",
+"bahasa_indonesia": "Ke mana",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Teke-mbe",
+"bahasa_indonesia": "Dari mana",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Bait-mbe",
+"bahasa_indonesia": "Ambil yang mana",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Peta-sai",
+"bahasa_indonesia": "Cari siapa",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Piaq-ape",
+"bahasa_indonesia": "Buat apa",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Kadu-ape",
+"bahasa_indonesia": "Pakai apa",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Beli-pire",
+"bahasa_indonesia": "Beli berapa",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Nyual-mbe",
+"bahasa_indonesia": "Jual ke mana",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Mangan-ape",
+"bahasa_indonesia": "Makan apa",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Inem-ape",
+"bahasa_indonesia": "Minum apa",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Baur-mbe",
+"bahasa_indonesia": "Dapat di mana",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Kemos-sai",
+"bahasa_indonesia": "Senyum ke siapa",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Nulis-ape",
+"bahasa_indonesia": "Menulis apa",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Mace-mbe",
+"bahasa_indonesia": "Baca yang mana",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Tokol-mbe",
+"bahasa_indonesia": "Duduk di mana",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Tindok-mbe",
+"bahasa_indonesia": "Tidur di mana",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Batur-sai",
+"bahasa_indonesia": "Teman siapa",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Semeton-sai",
+"bahasa_indonesia": "Saudara siapa",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Kanak-sai",
+"bahasa_indonesia": "Anak siapa",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Bale-mbe",
+"bahasa_indonesia": "Rumah yang mana",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Gubug-mbe",
+"bahasa_indonesia": "Kampung yang mana",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Peken-mbe",
+"bahasa_indonesia": "Pasar yang mana",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Bangket-mbe",
+"bahasa_indonesia": "Sawah yang mana",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Klambi-mbe",
+"bahasa_indonesia": "Baju yang mana",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Kereng-mbe",
+"bahasa_indonesia": "Sarung yang mana",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Pisin-pire",
+"bahasa_indonesia": "Uang berapa",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Sia-mbe",
+"bahasa_indonesia": "Kamu yang mana",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Olah-ape",
+"bahasa_indonesia": "Sayur apa",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Kandoq-ape",
+"bahasa_indonesia": "Lauk apa",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Jaje-ape",
+"bahasa_indonesia": "Kue apa",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Manuk-sai",
+"bahasa_indonesia": "Ayam siapa",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Meong-sai",
+"bahasa_indonesia": "Kucing siapa",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Asu-sai",
+"bahasa_indonesia": "Anjing siapa",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Sampi-sai",
+"bahasa_indonesia": "Sapi siapa",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Jaran-sai",
+"bahasa_indonesia": "Kuda siapa",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Kedis-ape",
+"bahasa_indonesia": "Burung apa",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Kayu-ape",
+"bahasa_indonesia": "Kayu apa",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Batu-mbe",
+"bahasa_indonesia": "Batu yang mana",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Yee-mbe",
+"bahasa_indonesia": "Air yang mana",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Langan-mbe",
+"bahasa_indonesia": "Jalan yang mana",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Nganteni-sai",
+"bahasa_indonesia": "Menunggu siapa",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Silaq-sai",
+"bahasa_indonesia": "Mengundang siapa",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Nyaut-kengku",
+"bahasa_indonesia": "Menjawab bagaimana",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Betoat-sai",
+"bahasa_indonesia": "Bertanya ke siapa",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Ngeraos-ape",
+"bahasa_indonesia": "Mengobrol apa",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Gateng-sai",
+"bahasa_indonesia": "Teko siapa",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Ladeng-sai",
+"bahasa_indonesia": "Pisau siapa",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Piring-pire",
+"bahasa_indonesia": "Piring berapa",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Gelas-pire",
+"bahasa_indonesia": "Gelas berapa",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Tas-sai",
+"bahasa_indonesia": "Tas siapa",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Dompet-sai",
+"bahasa_indonesia": "Dompet siapa",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Sepede-sai",
+"bahasa_indonesia": "Sepeda siapa",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Montor-sai",
+"bahasa_indonesia": "Motor siapa",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Oto-sai",
+"bahasa_indonesia": "Mobil siapa",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Kapal-sai",
+"bahasa_indonesia": "Kapal siapa",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Solah-mbe",
+"bahasa_indonesia": "Cantik yang mana",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Gagas-mbe",
+"bahasa_indonesia": "Gagah yang mana",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Belek-pire",
+"bahasa_indonesia": "Besar berapa",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Kodek-pire",
+"bahasa_indonesia": "Kecil berapa",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Lantang-pire",
+"bahasa_indonesia": "Panjang berapa",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Bungkek-pire",
+"bahasa_indonesia": "Pendek berapa",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Mahal-pire",
+"bahasa_indonesia": "Mahal berapa",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Murah-pire",
+"bahasa_indonesia": "Murah berapa",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Sengke-kengku",
+"bahasa_indonesia": "Sulit bagaimana",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Gampang-kengku",
+"bahasa_indonesia": "Mudah bagaimana",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Ngonek-pire",
+"bahasa_indonesia": "Lama berapa",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Gelis-kengku",
+"bahasa_indonesia": "Cepat bagaimana",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Kerep-pire",
+"bahasa_indonesia": "Rapat berapa",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Belat-pire",
+"bahasa_indonesia": "Jarang berapa",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Penoq-pire",
+"bahasa_indonesia": "Banyak berapa",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Bedikit-pire",
+"bahasa_indonesia": "Sedikit berapa",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Siliq-sai",
+"bahasa_indonesia": "Marah ke siapa",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Ilaq-kengku",
+"bahasa_indonesia": "Malu bagaimana",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Suka-kengku",
+"bahasa_indonesia": "Senang bagaimana",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Sedih-kengku",
+"bahasa_indonesia": "Sedih bagaimana",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Lelah-kengku",
+"bahasa_indonesia": "Lelah bagaimana",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Sakit-mbe",
+"bahasa_indonesia": "Sakit yang mana",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Pelih-mbe",
+"bahasa_indonesia": "Salah yang mana",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Bener-mbe",
+"bahasa_indonesia": "Betul yang mana",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Uwah-pidisan",
+"bahasa_indonesia": "Sudah kapan",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Tandur-mbe",
+"bahasa_indonesia": "Tanam di mana",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Ngemas-mbe",
+"bahasa_indonesia": "Kemas ke mana",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Membongkar-mbe",
+"bahasa_indonesia": "Bongkar yang mana",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Nunuq-ape",
+"bahasa_indonesia": "Bakar apa",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Nggoreng-ape",
+"bahasa_indonesia": "Menggoreng apa",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Meres-ape",
+"bahasa_indonesia": "Memeras apa",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Ngepot-sai",
+"bahasa_indonesia": "Mencubit siapa",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Tampel-sai",
+"bahasa_indonesia": "Menampar siapa",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Gocoq-sai",
+"bahasa_indonesia": "Memukul siapa",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Ngiring-sai",
+"bahasa_indonesia": "Ikut siapa",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Sai-an",
+"bahasa_indonesia": "Siapa lagi",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Ape-an",
+"bahasa_indonesia": "Apa lagi",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Mbe-an",
+"bahasa_indonesia": "Mana lagi",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Pire-an",
+"bahasa_indonesia": "Berapa lagi",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Berembe-an",
+"bahasa_indonesia": "Bagaimana lagi",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Kengku-an",
+"bahasa_indonesia": "Bagaimana lagi (dialek)",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Pidisan-an",
+"bahasa_indonesia": "Kapan lagi",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Sai-q",
+"bahasa_indonesia": "Siapakah",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Ape-q",
+"bahasa_indonesia": "Apakah",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Mbe-q",
+"bahasa_indonesia": "Manakah",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Pire-q",
+"bahasa_indonesia": "Berapakah",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Berembe-q",
+"bahasa_indonesia": "Bagaimanakah",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Kengku-q",
+"bahasa_indonesia": "Bagaimanakah (dialek)",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Pidisan-q",
+"bahasa_indonesia": "Kapankah",
+"kategori": "Kata Tanya"
+},
+{
+"bahasa_sasak": "Aur",
+"bahasa_indonesia": "Bambu",
+"kategori": "Kata Benda"
+},
+{
+"bahasa_sasak": "Baéq",
+"bahasa_indonesia": "Saja",
+"kategori": "Kata Keterangan"
+},
+{
+"bahasa_sasak": "Balang",
+"bahasa_indonesia": "Belalang",
+"kategori": "Kata Benda"
+},
+{
+"bahasa_sasak": "Baoq",
+"bahasa_indonesia": "Bungkus",
+"kategori": "Kata Kerja"
+},
+{
+"bahasa_sasak": "Barong",
+"bahasa_indonesia": "Bersama",
+"kategori": "Kata Keterangan"
+},
+{
+"bahasa_sasak": "Batuq",
+"bahasa_indonesia": "Batuk",
+"kategori": "Kata Kerja"
+},
+{
+"bahasa_sasak": "Belos",
+"bahasa_indonesia": "Tembus",
+"kategori": "Kata Sifat"
+},
+{
+"bahasa_sasak": "Bengaq",
+"bahasa_indonesia": "Heran",
+"kategori": "Kata Sifat"
+},
+{
+"bahasa_sasak": "Beraq",
+"bahasa_indonesia": "Berak / Buang Air Besar",
+"kategori": "Kata Kerja"
+},
+{
+"bahasa_sasak": "Bero",
+"bahasa_indonesia": "Basi",
+"kategori": "Kata Sifat"
+},
+{
+"bahasa_sasak": "Biang",
+"bahasa_indonesia": "Miring",
+"kategori": "Kata Sifat"
+},
+{
+"bahasa_sasak": "Bidoq",
+"bahasa_indonesia": "Perahu",
+"kategori": "Kata Benda"
+},
+{
+"bahasa_sasak": "Bintoq",
+"bahasa_indonesia": "Tarik",
+"kategori": "Kata Kerja"
+},
+{
+"bahasa_sasak": "Biring",
+"bahasa_indonesia": "Tepi / Pinggir",
+"kategori": "Kata Benda"
+},
+{
+"bahasa_sasak": "Bisoq",
+"bahasa_indonesia": "Bilas",
+"kategori": "Kata Kerja"
+},
+{
+"bahasa_sasak": "Bokoq",
+"bahasa_indonesia": "Punggung",
+"kategori": "Kata Benda"
+},
+{
+"bahasa_sasak": "Buas",
+"bahasa_indonesia": "Sembuh",
+"kategori": "Kata Sifat"
+},
+{
+"bahasa_sasak": "Bubuq",
+"bahasa_indonesia": "Bubuk",
+"kategori": "Kata Benda"
+},
+{
+"bahasa_sasak": "Bungkoq",
+"bahasa_indonesia": "Bungkuk",
+"kategori": "Kata Sifat"
+},
+{
+"bahasa_sasak": "Buwun",
+"bahasa_indonesia": "Sumur",
+"kategori": "Kata Benda"
+},
+{
+"bahasa_sasak": "Cakep",
+"bahasa_indonesia": "Tangkap",
+"kategori": "Kata Kerja"
+},
+{
+"bahasa_sasak": "Cangak",
+"bahasa_indonesia": "Tengadah",
+"kategori": "Kata Kerja"
+},
+{
+"bahasa_sasak": "Cawet",
+"bahasa_indonesia": "Celana Dalam",
+"kategori": "Kata Benda"
+},
+{
+"bahasa_sasak": "Cedaq",
+"bahasa_indonesia": "Dekat",
+"kategori": "Kata Sifat"
+},
+{
+"bahasa_sasak": "Celep",
+"bahasa_indonesia": "Masuk",
+"kategori": "Kata Kerja"
+},
+{
+"bahasa_sasak": "Cingak",
+"bahasa_indonesia": "Lihat",
+"kategori": "Kata Kerja"
+},
+{
+"bahasa_sasak": "Cipoq",
+"bahasa_indonesia": "Kecup / Cium",
+"kategori": "Kata Kerja"
+},
+{
+"bahasa_sasak": "Coq",
+"bahasa_indonesia": "Tusuk",
+"kategori": "Kata Kerja"
+},
+{
+"bahasa_sasak": "Dait",
+"bahasa_indonesia": "Temu / Ketemu",
+"kategori": "Kata Kerja"
+},
+{
+"bahasa_sasak": "Dapoq",
+"bahasa_indonesia": "Dapur",
+"kategori": "Kata Benda"
+},
+{
+"bahasa_sasak": "Denden",
+"bahasa_indonesia": "Tuntun",
+"kategori": "Kata Kerja"
+},
+{
+"bahasa_sasak": "Derup",
+"bahasa_indonesia": "Sergap",
+"kategori": "Kata Kerja"
+},
+{
+"bahasa_sasak": "Dila",
+"bahasa_indonesia": "Lampu",
+"kategori": "Kata Benda"
+},
+{
+"bahasa_sasak": "Dimpot",
+"bahasa_indonesia": "Sembunyi",
+"kategori": "Kata Kerja"
+},
+{
+"bahasa_sasak": "Doang",
+"bahasa_indonesia": "Saja",
+"kategori": "Kata Keterangan"
+},
+{
+"bahasa_sasak": "Dodot",
+"bahasa_indonesia": "Kemben",
+"kategori": "Kata Benda"
+},
+{
+"bahasa_sasak": "Dolan",
+"bahasa_indonesia": "Main",
+"kategori": "Kata Kerja"
+},
+{
+"bahasa_sasak": "Doro",
+"bahasa_indonesia": "Dara / Merpati",
+"kategori": "Kata Benda"
+},
+{
+"bahasa_sasak": "Dengah",
+"bahasa_indonesia": "Dengar",
+"kategori": "Kata Kerja"
+},
+{
+"bahasa_sasak": "Emba",
+"bahasa_indonesia": "Kambing",
+"kategori": "Kata Benda"
+},
+{
+"bahasa_sasak": "Endat",
+"bahasa_indonesia": "Tarik",
+"kategori": "Kata Kerja"
+},
+{
+"bahasa_sasak": "Endeng",
+"bahasa_indonesia": "Minta",
+"kategori": "Kata Kerja"
+},
+{
+"bahasa_sasak": "Enduq",
+"bahasa_indonesia": "Ibu (halus)",
+"kategori": "Kata Benda"
+},
+{
+"bahasa_sasak": "Engkaq",
+"bahasa_indonesia": "Sudah",
+"kategori": "Kata Keterangan"
+},
+{
+"bahasa_sasak": "Engkes",
+"bahasa_indonesia": "Ikat",
+"kategori": "Kata Kerja"
+},
+{
+"bahasa_sasak": "Enyit",
+"bahasa_indonesia": "Kikir / Pelit",
+"kategori": "Kata Sifat"
+},
+{
+"bahasa_sasak": "Gading",
+"bahasa_indonesia": "Kuning",
+"kategori": "Kata Sifat"
+},
+{
+"bahasa_sasak": "Gangan",
+"bahasa_indonesia": "Sayur",
+"kategori": "Kata Benda"
+},
+{
+"bahasa_sasak": "Garang",
+"bahasa_indonesia": "Panggang",
+"kategori": "Kata Kerja"
+},
+{
+"bahasa_sasak": "Gauq",
+"bahasa_indonesia": "Tongkat",
+"kategori": "Kata Benda"
+},
+{
+"bahasa_sasak": "Gedé",
+"bahasa_indonesia": "Besar",
+"kategori": "Kata Sifat"
+},
+{
+"bahasa_sasak": "Gembéq",
+"bahasa_indonesia": "Kambing",
+"kategori": "Kata Benda"
+},
+{
+"bahasa_sasak": "Gerit",
+"bahasa_indonesia": "Gores",
+"kategori": "Kata Kerja"
+},
+{
+"bahasa_sasak": "Giring",
+"bahasa_indonesia": "Ikut / Turut",
+"kategori": "Kata Kerja"
+},
+{
+"bahasa_sasak": "Gitaq",
+"bahasa_indonesia": "Lihat",
+"kategori": "Kata Kerja"
+},
+{
+"bahasa_sasak": "Gocoh",
+"bahasa_indonesia": "Tinju / Pukul",
+"kategori": "Kata Kerja"
+},
+{
+"bahasa_sasak": "Gombak",
+"bahasa_indonesia": "Jambul",
+"kategori": "Kata Benda"
+},
+{
+"bahasa_sasak": "Gupit",
+"bahasa_indonesia": "Jepit",
+"kategori": "Kata Kerja"
+},
+{
+"bahasa_sasak": "Idep",
+"bahasa_indonesia": "Ingat / Sadar",
+"kategori": "Kata Sifat"
+},
+{
+"bahasa_sasak": "Ilaq",
+"bahasa_indonesia": "Malu",
+"kategori": "Kata Sifat"
+},
+{
+"bahasa_sasak": "Imba",
+"bahasa_indonesia": "Tiru",
+"kategori": "Kata Kerja"
+},
+{
+"bahasa_sasak": "Inan",
+"bahasa_indonesia": "Induk",
+"kategori": "Kata Benda"
+},
+{
+"bahasa_sasak": "Ines",
+"bahasa_indonesia": "Dingin",
+"kategori": "Kata Sifat"
+},
+{
+"bahasa_sasak": "Injot",
+"bahasa_indonesia": "Kaget",
+"kategori": "Kata Sifat"
+},
+{
+"bahasa_sasak": "Iseq",
+"bahasa_indonesia": "Cuci",
+"kategori": "Kata Kerja"
+},
+{
+"bahasa_sasak": "Itek",
+"bahasa_indonesia": "Intip",
+"kategori": "Kata Kerja"
+},
+{
+"bahasa_sasak": "Jaje",
+"bahasa_indonesia": "Kue",
+"kategori": "Kata Benda"
+},
+{
+"bahasa_sasak": "Jangaq",
+"bahasa_indonesia": "Ayam",
+"kategori": "Kata Benda"
+},
+{
+"bahasa_sasak": "Jaoq",
+"bahasa_indonesia": "Jauh",
+"kategori": "Kata Sifat"
+},
+{
+"bahasa_sasak": "Jari",
+"bahasa_indonesia": "Jadi",
+"kategori": "Kata Kerja"
+},
+{
+"bahasa_sasak": "Jauq",
+"bahasa_indonesia": "Bawa",
+"kategori": "Kata Kerja"
+},
+{
+"bahasa_sasak": "Jele",
+"bahasa_indonesia": "Jelek",
+"kategori": "Kata Sifat"
+},
+{
+"bahasa_sasak": "Jenggrik",
+"bahasa_indonesia": "Jangkrik",
+"kategori": "Kata Benda"
+},
+{
+"bahasa_sasak": "Jijik",
+"bahasa_indonesia": "Geli",
+"kategori": "Kata Sifat"
+},
+{
+"bahasa_sasak": "Jomboq",
+"bahasa_indonesia": "Lebih / Sisa",
+"kategori": "Kata Sifat"
+},
+{
+"bahasa_sasak": "Kaken",
+"bahasa_indonesia": "Makan",
+"kategori": "Kata Kerja"
+},
+{
+"bahasa_sasak": "Kaling",
+"bahasa_indonesia": "Dari",
+"kategori": "Kata Keterangan"
+},
+{
+"bahasa_sasak": "Kance",
+"bahasa_indonesia": "Teman",
+"kategori": "Kata Benda"
+},
+{
+"bahasa_sasak": "Kandoq",
+"bahasa_indonesia": "Lauk",
+"kategori": "Kata Benda"
+},
+{
+"bahasa_sasak": "Karing",
+"bahasa_indonesia": "Tinggal",
+"kategori": "Kata Keterangan"
+},
+{
+"bahasa_sasak": "Kates",
+"bahasa_indonesia": "Pepaya",
+"kategori": "Kata Benda"
+},
+{
+"bahasa_sasak": "Kelecet",
+"bahasa_indonesia": "Lecet",
+"kategori": "Kata Sifat"
+},
+{
+"bahasa_sasak": "Kelik",
+"bahasa_indonesia": "Panggil",
+"kategori": "Kata Kerja"
+},
+{
+"bahasa_sasak": "Kelung",
+"bahasa_indonesia": "Patah",
+"kategori": "Kata Sifat"
+},
+{
+"bahasa_sasak": "Kembong",
+"bahasa_indonesia": "Kembung",
+"kategori": "Kata Sifat"
+},
+{
+"bahasa_sasak": "Kengkaq",
+"bahasa_indonesia": "Kangkang",
+"kategori": "Kata Sifat"
+},
+{
+"bahasa_sasak": "Kentoq",
+"bahasa_indonesia": "Lempar",
+"kategori": "Kata Kerja"
+},
+{
+"bahasa_sasak": "Keraq",
+"bahasa_indonesia": "Teriak",
+"kategori": "Kata Kerja"
+},
+{
+"bahasa_sasak": "Kerek",
+"bahasa_indonesia": "Kering",
+"kategori": "Kata Sifat"
+},
+{
+"bahasa_sasak": "Keriq",
+"bahasa_indonesia": "Kikis",
+"kategori": "Kata Kerja"
+},
+{
+"bahasa_sasak": "Ketoq",
+"bahasa_indonesia": "Potong",
+"kategori": "Kata Kerja"
+},
+{
+"bahasa_sasak": "Kokoq",
+"bahasa_indonesia": "Sungai",
+"kategori": "Kata Benda"
+},
+{
+"bahasa_sasak": "Kol",
+"bahasa_indonesia": "Kubis",
+"kategori": "Kata Benda"
+},
+{
+"bahasa_sasak": "Kremak",
+"bahasa_indonesia": "Kera",
+"kategori": "Kata Benda"
+},
+{
+"bahasa_sasak": "Lalo",
+"bahasa_indonesia": "Pergi",
+"kategori": "Kata Kerja"
+},
+{
+"bahasa_sasak": "Lango",
+"bahasa_indonesia": "Lalat",
+"kategori": "Kata Benda"
+},
+{
+"bahasa_sasak": "Lantang",
+"bahasa_indonesia": "Panjang",
+"kategori": "Kata Sifat"
+},
+{
+"bahasa_sasak": "Lapoq",
+"bahasa_indonesia": "Semua",
+"kategori": "Kata Keterangan"
+},
+{
+"bahasa_sasak": "Layah",
+"bahasa_indonesia": "Lapar",
+"kategori": "Kata Sifat"
+},
+{
+"bahasa_sasak": "Lemet",
+"bahasa_indonesia": "Lembek",
+"kategori": "Kata Sifat"
+}
 ]
