@@ -34,8 +34,7 @@ export default function handler(req, res) {
         item.bahasa_sasak.toLowerCase().includes(query) ||
         item.bahasa_indonesia.toLowerCase().includes(query)
       );
-
-      
+     
       const dataDibatasi = hasilCari.slice(0, 15);
 
       return res.status(200).json({
