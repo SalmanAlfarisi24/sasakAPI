@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "API Proteksi Data Kamus Sasak via Vercel",
   "main": "api/kamus.js",
-  "scripts": { 
+  "scripts": {
     "start": "vercel dev"
   },
   "dependencies": {}
