@@ -43,7 +43,6 @@ export default function handler(req, res) {
         data: dataDibatasi
       });
     }
-
    
     return res.status(400).json({ 
       status: "error", 
