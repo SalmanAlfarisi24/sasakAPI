@@ -4,7 +4,7 @@
     {
       "src": "api/kamus.js",
       "use": "@vercel/node"
-    },
+    }, 
     {
       "src": "index.html",
       "use": "@vercel/static"
