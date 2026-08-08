@@ -6,5 +6,5 @@
   "scripts": {
     "start": "vercel dev"
   },
-  "dependencies": {}
+  "dependencies": {} 
 }
